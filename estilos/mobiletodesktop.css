@@ -1,0 +1,136 @@
+/* PARTE DE FLEX 
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .main, .aside, .footer{
+    padding: 20px;
+}
+.header {
+    background: #8a2be2;
+    flex-basis:60px;
+
+}
+.main {
+    background: #502be2;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside {
+    background: #1439a8;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.footer {
+    background: #3136daed;
+    flex-grow:1;
+    
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .content{
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .main, .aside{
+        height: 900px;
+    }
+    .main{
+        flex-grow: 4;
+    }
+
+    .aside{
+        flex-grow: 1;
+    }
+    .header {
+        flex-basis: 100%;
+        max-height: 60px;
+    }
+    .footer{
+        flex-basis: 100%;
+    }
+
+} */
+/*PARTE DE GRID*/
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .main, .aside, .footer{
+    padding: 20px;
+}
+.header {
+    background: #8a2be2;
+    flex-basis:60px;
+
+}
+.main {
+    background: #502be2;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside {
+    background: #1439a8;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.footer {
+    background: #3136daed;
+    flex-grow:1;
+    
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+    .content{
+        display:grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .header {
+        grid-column: 1 / span 3;
+    }
+    .main{
+        grid-row: 2/6;
+        grid-column: 1/ span 2;
+
+    
+    }
+
+    .aside{
+        grid-row: 2/6;
+        grid-column: 3/ 3;
+
+     
+    }
+   
+    .footer{
+        grid-row: 6 / 7;
+        grid-column: 1/ span 3;
+    }
+
+} */
+

@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    font-family: Franklin Gothic Medium;
+}
+body{
+    background-color: rgb(41, 25, 93);
+    display: inline-block;
+   
+}
+li, a, ul, ol{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.nav{
+    display: flex;
+    position:fixed;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgb(18, 51, 127);
+    text-align: center;
+}
+#fotopefil{
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+
+.navboton{
+    color: #fff;
+    background-color: blueviolet;
+    
+
+}
+.image{
+    height: 200px;
+    width: 200px;
+}
+.cotenido{
+    display:inline-flex;
+    
+    padding-left: 2000px;
+}
